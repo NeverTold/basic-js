@@ -29,7 +29,6 @@ function encodeLine(str) {
   if (number > 1) {
     result += `${number}${str[str.length - 1]}`;
   } else result += `${str[str.length - 1]}`;
-  console.log(result);
   return result;
   } else return '';
   // remove line with error and write your code here
