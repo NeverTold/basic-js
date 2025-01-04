@@ -29,7 +29,6 @@ function minesweeper(matrix) {
   for (let i = 0; i < matrix.length; i += 1) {
     for (let j = 0; j < matrix[i].length; j += 1) {
       if (matrix[i][j]) {
-        console.log(i, j);
         if (i >= 1) {
           result[i - 1][j] += 1;
           if (j >= 1) {
@@ -52,8 +51,6 @@ function minesweeper(matrix) {
       }
     }
   }
-  console.log(matrix);
-  console.log(result);
   return result;
 }
 
